@@ -1,4 +1,5 @@
-import { ListGroup, Badge, Row, Col, Image } from "react-bootstrap";
+import { ListGroup, Badge, Row, Col } from "react-bootstrap";
+import EmpleadoAvatar from "./EmpleadoAvatar";
 
 const EmpleadoRow = ({
   idEmpleado,
@@ -11,10 +12,7 @@ const EmpleadoRow = ({
     <Row>
       <ListGroup.Item className="d-flex align-items-center justify-content-center">
         <Col>
-          <Image
-            src={`https://unavatar.io/github/${avatarEmpleado}`}
-            roundedCircle
-          />
+          <EmpleadoAvatar avatarEmpleado={avatarEmpleado}></EmpleadoAvatar>
         </Col>
         <Col xs={10}>
           <h5>{nombreEmpleado}</h5>
