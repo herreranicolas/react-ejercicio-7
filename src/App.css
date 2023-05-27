@@ -1,3 +1,10 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   width: 2.5rem;
 }

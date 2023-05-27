@@ -11,15 +11,17 @@ const EmpleadoRow = ({
   return (
     <Row>
       <ListGroup.Item className="d-flex align-items-center justify-content-center">
-        <Col>
+        <Col className="text-center mx-4" md={1}>
           <EmpleadoAvatar avatarEmpleado={avatarEmpleado}></EmpleadoAvatar>
         </Col>
-        <Col xs={10}>
+        <Col xs={10} md={11}>
           <h5>{nombreEmpleado}</h5>
-          <h6>
+          <p className="mb-0">
             {puestoEmpleado}
-            <Badge bg="primary">{sectorEmpleado}</Badge>
-          </h6>
+            <Badge bg="primary" className="ms-1">
+              {sectorEmpleado}
+            </Badge>
+          </p>
         </Col>
       </ListGroup.Item>
     </Row>

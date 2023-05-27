@@ -5,7 +5,7 @@ import EmpleadoList from "./components/EmpleadoList";
 
 function App() {
   return (
-    <Container>
+    <Container className="d-flex justify-content-center align-items-center">
       <EmpleadoList />
     </Container>
   );
